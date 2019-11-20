@@ -11,6 +11,7 @@ var express         = require("express"),
     User            = require("./models/user"),
     LocalStrategy   = require("passport-local");
 
+    
 var commentRoutes       = require("./routes/comments"),
     campgroundRoutes    = require("./routes/campgrounds"),
     indexRoutes         = require("./routes/index");
