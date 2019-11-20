@@ -28,7 +28,7 @@ app.use(flash());
 //PASSPORT LOCAL CONFIGURATION
 //====================
 
-app.use(require("Express-session")({
+app.use(require("express-session")({
     secret: "Once again Rusty wins cutest dog!!",
     resave: false,
     saveUninitialized: false
