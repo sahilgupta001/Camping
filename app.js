@@ -11,14 +11,12 @@ var express         = require("express"),
     User            = require("./models/user"),
     LocalStrategy   = require("passport-local");
 
-    
 var commentRoutes       = require("./routes/comments"),
     campgroundRoutes    = require("./routes/campgrounds"),
     indexRoutes         = require("./routes/index");
 //seedDB();
-console.log(process.env.DATABASEURL);
+// console.log(process.env.DATABASEURL);
 mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb+srv://admin:sahilsahil@cluster0-wnd4p.mongodb.net/test?retryWrites=true&w=majority");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
